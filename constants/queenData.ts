@@ -3683,6 +3683,150 @@ export const episodes = [
     type: 'finale',
     franchise: 'US'
   },
+  {
+    id: 'us13ep1PorkChop',
+    episodeNumber: 1,
+    season: '13',
+    title: 'The Pork Chop',
+    description: 'Thirteen new queens face off in head-to-head lip sync battles that determine who earns an early ticket to the competition and who must plead their case to stay.',
+    type: 'premiere,lipsync',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep2Condragulations',
+    episodeNumber: 2,
+    season: '13',
+    title: 'Condragulations',
+    description: 'The winners of the first episode write verses and perform to RuPaul\'s track Condragulations while the eliminated queens watch from the Porkchop Loading Dock.',
+    type: 'performance,musical',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep3Phenomenon',
+    episodeNumber: 3,
+    season: '13',
+    title: 'Phenomenon',
+    description: 'The Pork Chop queens return to write and record original verses for the song Phenomenon before showing off their runway evolution.',
+    type: 'performance,musical',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep4RuPaulmarkChannel',
+    episodeNumber: 4,
+    season: '13',
+    title: 'RuPaulmark Channel',
+    description: 'The queens star in holiday-themed movies for the RuPaulmark Channel, testing their acting chops and comedic timing.',
+    type: 'acting,comedy',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep5BagBall',
+    episodeNumber: 5,
+    season: '13',
+    title: 'The Bag Ball',
+    description: 'The dolls must serve three bag-inspired runway looks, culminating in a design challenge built entirely from bags.',
+    type: 'design,ball,runway',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep6Discomentary',
+    episodeNumber: 6,
+    season: '13',
+    title: 'Disco-mentary',
+    description: 'The queens boogie through disco history in a dance documentary that demands choreography, characterization, and teamwork.',
+    type: 'dancing,performance',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep7BossyRossy',
+    episodeNumber: 7,
+    season: '13',
+    title: 'Bossy Rossy Ruboot',
+    description: 'Ross Mathews hosts another round of outrageous improv talk shows as the queens create wild characters and scenarios.',
+    type: 'improv,comedy',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep8UnverifiedRusical',
+    episodeNumber: 8,
+    season: '13',
+    title: 'Social Media: The Unverified Rusical',
+    description: 'The queens tackle a rusical about the highs and lows of social media fame complete with live vocals and choreography.',
+    type: 'musical,singing',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep9SnatchGame',
+    episodeNumber: 9,
+    season: '13',
+    title: 'Snatch Game',
+    description: 'The library is open as the queens deliver celebrity impersonations in the iconic Snatch Game.',
+    type: 'snatchGame,comedy,improv',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep10FreakyFridayQueens',
+    episodeNumber: 10,
+    season: '13',
+    title: 'Freaky Friday Queens',
+    description: 'RuPaul pairs the queens together to makeover one another and swap drag aesthetics for the runway.',
+    type: 'makeover,runway',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep11PopGoesTheQueens',
+    episodeNumber: 11,
+    season: '13',
+    title: 'Pop! Goes the Queens',
+    description: 'The dolls create and pitch their own soft drinks in branding campaigns complete with commercials and custom packaging.',
+    type: 'branding,commercial,comedy',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep12NiceGirlsRoast',
+    episodeNumber: 12,
+    season: '13',
+    title: 'Nice Girls Roast',
+    description: 'The queens prove that reading is fundamental in a roast of past Miss Congeniality winners.',
+    type: 'comedy,roast',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep13HennyIShrunk',
+    episodeNumber: 13,
+    season: '13',
+    title: 'Henny, I Shrunk the Drag Queens',
+    description: 'The top queens star in a sci-fi adventure acting challenge before stomping an ooey-gooey runway.',
+    type: 'acting,comedy',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep14GettinLucky',
+    episodeNumber: 14,
+    season: '13',
+    title: 'Gettin Lucky',
+    description: 'The finalists film a music video for RuPaul\'s single Lucky, look back on their journey, and show off their best drag.',
+    type: 'musicVideo',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep15Reunited',
+    episodeNumber: 15,
+    season: '13',
+    title: 'RPDR Reunited',
+    description: 'The season 13 queens reunite virtually to spill the tea, revisit the drama, and celebrate the fan-favorite moments.',
+    type: 'reunion',
+    franchise: 'US'
+  },
+  {
+    id: 'us13ep16GrandFinale',
+    episodeNumber: 16,
+    season: '13',
+    title: 'Grand Finale',
+    description: 'The top four battle in the lip sync for the crown spectacle where RuPaul names America\'s Next Drag Superstar.',
+    type: 'finale,lipsyncSmackdown',
+    franchise: 'US'
+  },
 
 ].sort((a, b) => a.episodeNumber - b.episodeNumber);
 
