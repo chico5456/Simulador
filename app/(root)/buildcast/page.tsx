@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrown, faPlay, faCheck, faX } from '@fortawesome/free-solid-svg-icons';
 import { Info } from "lucide-react";
 import { Separator } from "@/components/ui/separator"
+import { withQueenStats } from "@/lib/queenStats";
 
 import {
   DndContext,
@@ -59,15 +60,6 @@ const Page = () => {
   const [seasonMode, setSeasonMode] = useState('');
   const [isLoading, setIsLoading] = useState(true); // fix loading issues with the big red Xs
   const router = useRouter();
-
-  const generateRandomStats = () => ({
-    Acting: Math.floor(Math.random() * 101),
-    Dance: Math.floor(Math.random() * 101),
-    Comedy: Math.floor(Math.random() * 101),
-    Design: Math.floor(Math.random() * 101),
-    Runway: Math.floor(Math.random() * 101),
-    Singing: Math.floor(Math.random() * 101),
-  });
 
   const handleSaveToLocalStorage = () => {
     localStorage.setItem("selectedQueens", JSON.stringify(queenCards));
@@ -123,7 +115,7 @@ const Page = () => {
     let parsedEps: any[] = [];
 
     if (savedQueens) {
-      parsedQueens = JSON.parse(savedQueens);
+      parsedQueens = JSON.parse(savedQueens).map((queen: any) => withQueenStats(queen));
       parsedQueens.sort((a: any, b: any) => a.name.localeCompare(b.name));
       setQueenCards(parsedQueens);
     }
@@ -453,7 +445,7 @@ const Page = () => {
                       Queens
                     </h2>
                     <p className="mt-2 text-sm font-medium text-purple-800">Select the queens that you wish you wish to compete in this season!
-                      <br /> You can also edit their stats by entering a number between 1-100 - the higher the stat the better! (or keep them randomly generated)</p>
+                      <br /> You can also edit their stats by entering a number between 1-100 - the higher the stat the better!</p>
                   </div>
                 </div>
 
@@ -466,10 +458,7 @@ const Page = () => {
                       if (prev.some((q) => q.id === queen.id)) return prev;
                       return [
                         ...prev,
-                        {
-                          ...queen,
-                          stats: generateRandomStats(),
-                        },
+                        withQueenStats(queen),
                       ];
                     });
                   }}

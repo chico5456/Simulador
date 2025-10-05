@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import * as Flags from 'country-flag-icons/react/3x2';
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { QueenStats } from "@/lib/queenStats";
 
 import {
   Accordion,
@@ -11,15 +12,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
-type QueenStats = {
-
-  Acting: number;
-  Dance: number;
-  Comedy: number;
-  Design: number;
-  Singing: number;
-};
 
 type Queen = {
   id: string;
